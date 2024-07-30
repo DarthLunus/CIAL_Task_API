@@ -10,7 +10,7 @@ services:
 
   web:
     build: .
-    command: gunicorn --bind 0.0.0.0:8000 stock_api.wsgi:application
+    command: gunicorn --bind 0.0.0.0:8000 cial_task.wsgi:application
     volumes:
       - .:/app
     ports:

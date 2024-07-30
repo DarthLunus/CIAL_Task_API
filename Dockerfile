@@ -20,4 +20,4 @@ EXPOSE 8000
 
 ENTRYPOINT ["/app/entrypoint.sh"]
 
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "stock_api.wsgi:application"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "cial_task.wsgi:application"]
